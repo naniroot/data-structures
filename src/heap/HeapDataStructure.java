@@ -7,20 +7,20 @@ import util.TestData;
  */
 public class HeapDataStructure {
 
-    static int[] testArray = TestData.generateRandomIntegerArray(50, 100);
+    static int[] testArray = TestData.generateRandomIntegerArray(50, 1000);
 
-    static void printArry() {
+    static void printArray() {
         for(int k: testArray) {
             System.out.print(k + " ");
         }
         System.out.println("");
     }
     public static void main(String[] args) {
-        printArry();
+        printArray();
         buildMaxHeap();
-        printArry();
+        printArray();
         heapSort();
-        printArry();
+        printArray();
     }
 
     public static void maxHeapify(int heapSize, int index) {
